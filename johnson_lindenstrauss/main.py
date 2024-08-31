@@ -19,7 +19,7 @@ NUM_STEPS = 250
 LR = 0.01
 PLOT_EVERY = 25
 
-DEVICE = torch.device("mps")
+DEVICE = torch.device("cpu")  # Use "mps" for Apple Silicon
 torch.manual_seed(42)
 # torch.set_default_dtype(torch.float64)
 
